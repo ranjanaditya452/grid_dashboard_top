@@ -23,7 +23,7 @@
 
     display: grid;
     align-content: start;
-    row-gap: 55px;
+    gap: 55px;
     
 }
 
@@ -59,6 +59,8 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    z-index: 2;
+    box-shadow: 0 1px 4px darkgray ;
 }
 .searchbar{
     height: 30px;
@@ -107,7 +109,63 @@ font-size: 1.1rem;
 
 .article{
     grid-row: 2/-1;
+    z-index: 1;
 
-
+    padding: 18px 18px 18px 10px;
     background-color: #E0E0E0;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 15px;
+}
+
+.art1{
+    grid-row:1/3 ;
+}
+.announce{
+     display: grid;
+     gap: 24px;
+     padding: 20px;
+     background-color: white;
+     border-radius: 6px;
+     align-items: start;
+     max-width: 35ch;
+   
+}
+.bordering{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
+}
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+    align-items: center;
+    max-width: 35ch;
+}
+ h2{
+    margin-bottom: 20px;
+}
+ .textem{
+    
+    opacity: 0.6;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+.announce >div > div{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.trending >div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
